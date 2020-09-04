@@ -14,7 +14,7 @@ const Root = () => {
   return (
     <div>
       <QrReader delay={300} onError={handleError} onScan={handleScan} style={{width: "100%"}} showViewFinder={true} />
-      <div id="result">{result}</div>
+      <textarea value={result} style={{width: "90%"}} />
     </div>
   );
 }
